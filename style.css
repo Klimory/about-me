@@ -1,0 +1,107 @@
+/* Betűtípus */
+html {
+    font-family: 'Headland One', serif;
+}
+/* /Betűtípus */
+
+/* Elrendezést segítő színek eleje 
+.profile-card {
+    background-color: yellow;
+  }
+  .head, .content {
+    background-color: green;
+  }
+  .profile-imgae, .name-headline, .about, .links {
+    background-color: purple;
+  }
+   Elrendezést segítő színek vége */
+
+  /* CSS reset eleje */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+  }
+  /* CSS reset vége */
+
+  /* Elrendezés */
+  .profile-card {
+    width: 600px;
+    max-width: calc(100vw - 10px);
+  }
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .head, .links {
+    text-align: center;
+  }
+  .head, .content {
+    width:  90%;
+    margin: 0 auto;
+  }
+  img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+  }
+  .profile-image {
+    margin-top: -60px;
+  }
+
+ul {
+    list-style-type: none;
+}
+li {
+    display: inline;
+}
+.head, .about {
+    margin-bottom: 14%;
+}
+.content {
+    padding: 2% 2%;
+}
+body {
+    background: url('assets/hatter.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+.profile-card {
+    background-color: rgba(49, 15, 15, 0.5);
+    border-radius: 4px;
+    box-shadow: hsla(0, 0%, 0%, .8) 50px 50px 80px;
+}
+img {
+    padding: 7px;
+    background-color: rgb(133, 103, 103);
+    transition: all 0.5s ease-in-out;
+    filter: grayscale(50%);
+  }
+  .content {
+    border-top: 3px solid rgba(0, 0, 0, 0.8);
+  }
+  img:hover {
+    transform: scale(1.1);
+    /*filter: grayscale(20%); */
+  }
+p {
+    color: yellow;
+    letter-spacing: 1px;
+}
+#from {
+    color: black;
+}
+#contact {
+    color: yellow;
+}
+.links {
+    border-top: 3px solid rgba(0, 0, 0, 0.8);
+}
+.codeberrylink {
+    color: yellow;
+}
+a:hover {
+    color: red;
+}
